@@ -216,3 +216,6 @@
     device = <&trackball>;
     };
 };
+&uicr {
+    nfct-pins-as-gpios;
+};
