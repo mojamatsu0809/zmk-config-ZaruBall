@@ -34,3 +34,7 @@
         led-blue = &led2;
     };
 };
+
+&trackball_listener {
+    status = "okay";
+};
