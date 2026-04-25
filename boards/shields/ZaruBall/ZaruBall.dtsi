@@ -206,6 +206,7 @@
         zephyr,axis-y = <INPUT_REL_Y>;
         res-cpi = <600>;
         force-awake;
+        swap-xy;
     };
 };
 
