@@ -1,14 +1,11 @@
 #include "ZaruBall.dtsi"
 #include <dt-bindings/zmk/input_transform.h>
-
 &xiao_serial { status = "disabled"; };
-
 // matrix transformでのピン数オフセット
 &default_transform { // Offset of 7 because the left side has 2 columns
     col-offset = <12>;
     row-offset = <12>;
 };
-
 &kscan0 {
     gpios
         = <&xiao_d 0 GPIO_ACTIVE_HIGH>//M1
@@ -20,7 +17,6 @@
         ;
     interrupt-gpios = <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;//IGPIO
 };
-
 // pmw-3610
 &trackball_listener {
     status = "okay";
